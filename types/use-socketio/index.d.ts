@@ -4,12 +4,11 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 import * as React from "../react";
-import "socket.io-client";
 
 /**
  * Socket.io context provider
  */
-export const ClientSocket: React.Component<{ url: string, children: React.ReactNode }>;
+export const ClientSocket: React.ComponentType<{ url: string, children: React.ReactNode }>;
 /**
  * Socket.io hook
  * @param eventKey The event that we're listening for
